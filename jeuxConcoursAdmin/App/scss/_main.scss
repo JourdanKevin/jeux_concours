@@ -1,0 +1,206 @@
+.confirmation {
+    display: none;
+}
+
+.title {
+    padding-top: 1rem;
+}
+
+.input {
+    margin: 0 0 0.7rem 0;
+}
+
+.formulaire,
+.confirmation {
+    padding-bottom: 0.7rem;
+}
+
+td {
+    height: 1rem;
+}
+
+table {
+    border-spacing: 0.5rem;
+}
+
+#listeAdresse p {
+    cursor: pointer;
+}
+
+.table {
+    text-align: center;
+}
+
+.editV {
+    align-items: flex-start;
+    background-color: white; //rgb(244, 251, 255)
+    width: 90%;
+    // width: 50%;
+    height: 95%;
+    border-radius: 1%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(1, 12, 25), 0 6px 20px 0 rgba(1, 12, 25, 0.405);
+}
+
+.editImg {
+    color: $c3;
+    border-bottom: 2px solid $gray;
+    padding-top: 1.938em;
+    padding-bottom: 1.938em;
+}
+
+.modalSave {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -20%);
+}
+
+#inscription {
+    width: 33%;
+    &>p {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: auto;
+    border: solid 1rem black;
+    border-radius: 60px;
+    height: 95%;
+    max-width: 390px;
+    min-width: 390px;
+    overflow-x: inherit;
+    box-shadow: 0 4px 8px 0 rgb(1, 12, 25),
+    0 6px 20px 0 rgba(1, 12, 25, 0.405);
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+#closeModal {
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+    .fa-xmark {
+        color: black;
+        transition: all 0.5s ease-out;
+    }
+    &:hover {
+        .fa-xmark {
+            color: grey
+        }
+    }
+}
+
+.file {
+    background-color: white;
+    color: black;
+}
+
+.datas {
+    width: 50%;
+    margin: 1rem;
+    height: 95%;
+}
+
+.edition {
+    width: 50%;
+    margin: 1rem;
+    height: 95%;
+    overflow-x: inherit;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    &::placeholder {
+        color: transparent;
+    }
+    &:placeholder-shown~.form__label {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 20px;
+    }
+}
+
+.form__label {
+    all: initial;
+    * {
+        all: unset;
+    }
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $gray;
+}
+
+.form__field:focus {
+    ~.form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: $c3;
+        font-weight: 700;
+    }
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, $c3, $c2);
+    border-image-slice: 1;
+    color: $c2;
+}
+
+
+/* reset input */
+
+.form__field {
+    &:required,
+    &:invalid {
+        box-shadow: none;
+    }
+}
+
+.label_Image {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.label_Image_active {
+    padding-bottom: 6px;
+    font-weight: 700;
+    color: $c3;
+}
+
+.image_active {
+    border-width: 3px;
+    border-image: linear-gradient(to right, $c3, $c2);
+    border-image-slice: 1;
+}
+
+.formOperation {
+    width: 66%;
+    align-items: baseline;
+}

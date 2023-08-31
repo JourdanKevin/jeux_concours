@@ -1,0 +1,32 @@
+.confirmation {
+    display: none;
+}
+
+.title {
+    padding-top: 1rem;
+}
+
+.input {
+    margin: 0 0 0.7rem 0;
+}
+
+.formulaire,
+.confirmation {
+    padding-bottom: 0.7rem;
+}
+
+td {
+    height: 1rem;
+}
+
+table {
+    border-spacing: 0.5rem;
+}
+
+tr>:nth-child(3) {
+    color: $c3;
+}
+
+#listeAdresse p {
+    cursor: pointer;
+}

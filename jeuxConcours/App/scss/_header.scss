@@ -1,0 +1,20 @@
+.logo {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1.6rem;
+    margin-top: 2rem;
+}
+
+.subTitle {
+    color: $c2;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+    margin-top: -0.4rem;
+    transform: scale(1.2, 0.9);
+    letter-spacing: -0.1rem;
+    opacity: 0.87;
+    font-family: $f2;
+    display: inline-block;
+}
